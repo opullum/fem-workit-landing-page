@@ -15,9 +15,53 @@ TrueType font faces with support for various weights and sizes */
 
 :root {
   /* Colors provided from Figma design file */
+
   --green: #44ffa1;
   --purple-900: #24053e;
   --purple-500: #584d62;
   --purple-100: #fcf8ff;
   --white: #ffffff;
+}
+
+/* Classes for Text Presets. Including varying font families, weights, and line heights. These 
+will be applied to elements as util classes. */
+
+.text-preset-1 {
+  /* Fraunces 144 Semi Bold at 80px */
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 100%;
+}
+
+.text-preset-2 {
+  /* Fraunces 144 Semi Bold at 56px */
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 120%;
+}
+
+.text-preset-3 {
+  /* Fraunces 144 Semi Bold at 32px */
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.text-preset-4 {
+  /* Manrope Regular at 18px */
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 180%;
+}
+
+.text-preset-4 {
+  /* Manrope Bold at 18px */
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 150%;
 }
