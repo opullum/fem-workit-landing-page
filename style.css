@@ -29,10 +29,10 @@ will be applied to elements as util classes. */
 /* Using rem sizing for fonts assuming a 1:16 ratio (rem:px). This is done out of preference */
 
 .text-preset-1 {
-  /* Fraunces 144 Semi Bold at 80px */
+  /* Fraunces 144 Semi Bold at 48px */
   font-family: "Fraunces", "Times New Roman", serif;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 100%;
 }
 
@@ -45,10 +45,10 @@ will be applied to elements as util classes. */
 }
 
 .text-preset-3 {
-  /* Fraunces 144 Semi Bold at 32px */
+  /* Fraunces 144 Semi Bold at 24px */
   font-family: "Fraunces", "Times New Roman", serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 120%;
 }
 
@@ -60,12 +60,19 @@ will be applied to elements as util classes. */
   line-height: 180%;
 }
 
-.text-preset-4 {
+.text-preset-5 {
   /* Manrope Bold at 18px */
   font-family: "Manrope", "Arial", sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 150%;
+}
+
+.button-preset {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 180%;
 }
 
 /* Styling for different components, sections */
