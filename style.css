@@ -34,13 +34,14 @@ will be applied to elements as util classes. */
   font-weight: 600;
   font-size: 3rem;
   line-height: 100%;
+  color: var(--white);
 }
 
 .text-preset-2 {
   /* Fraunces 144 Semi Bold at 56px */
   font-family: "Fraunces", "Times New Roman", serif;
-  font-weight: 600;
-  font-size: 3.5rem;
+  font-weight: 500;
+  font-size: 2rem;
   line-height: 120%;
 }
 
@@ -66,9 +67,13 @@ will be applied to elements as util classes. */
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 150%;
+
+  color: var(--white);
 }
 
 .button-preset {
+  width: fit-content;
+
   font-family: "Manrope", "Arial", sans-serif;
   font-weight: bold;
   font-size: 1rem;
@@ -76,14 +81,92 @@ will be applied to elements as util classes. */
 }
 
 /* Styling for different components, sections */
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  color: var(--purple-900); /* Default text color */
+}
+
+header {
+  background-color: var(--purple-900);
+  padding: 0 20px;
+}
+
+.keynotes-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-keynotes {
+  list-style-position: inside;
+  padding: 0;
+}
+
+.list-keynotes::marker {
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Smaller element styling rules */
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--green);
+}
+
+.hero-illustration {
+  width: 100%;
+}
+
 .list-keynotes {
   /* Styling for the section providing keynote information on the product. Custom list styling. */
   /* Placeholder CSS class */
 }
 
-.consulation {
+.cta-consulation {
   /* Styling for the section allowing users to book a consultation with Louis Graham. */
   /* Placeholder CSS class */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32;
+
+  padding: 32px;
+  background-color: var(--purple-900);
+  color: var(--white);
 }
 
 /* Utility Classes */
