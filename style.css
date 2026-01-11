@@ -80,6 +80,10 @@ will be applied to elements as util classes. */
 }
 
 /* Utility Classes */
+.underline {
+  /* Placeholder CSS class for the underline element found under 'Apply for Access', 
+  'tailored' in the Hero text */
+}
 
 /* Media queries for responsive layouts. This challenge is designed with a mobile-first approach in 
 mind with styling changes applied to specific component changes */
