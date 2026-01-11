@@ -1,0 +1,23 @@
+/* Typefaces for 'Fraunces' and 'Manrope' provided from Front End Mentor 
+TrueType font faces with support for various weights and sizes */
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("Truetype");
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+    format("Truetype");
+}
+
+:root {
+  /* Colors provided from Figma design file */
+  --green: #44ffa1;
+  --purple-900: #24053e;
+  --purple-500: #584d62;
+  --purple-100: #fcf8ff;
+  --white: #ffffff;
+}
