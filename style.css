@@ -13,6 +13,13 @@ TrueType font faces with support for various weights and sizes */
     format("Truetype");
 }
 
+/* Universal reset to remove all built in margins/padding. Will manually implement for each element */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 :root {
   /* Colors provided from Figma design file */
 
@@ -125,7 +132,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 16;
+  gap: 4;
 }
 
 .list-keynote-marker {
