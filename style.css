@@ -26,6 +26,8 @@ TrueType font faces with support for various weights and sizes */
 /* Classes for Text Presets. Including varying font families, weights, and line heights. These 
 will be applied to elements as util classes. */
 
+/* Using rem sizing for fonts assuming a 1:16 ratio (rem:px). This is done out of preference */
+
 .text-preset-1 {
   /* Fraunces 144 Semi Bold at 80px */
   font-family: "Fraunces", "Times New Roman", serif;
@@ -64,4 +66,18 @@ will be applied to elements as util classes. */
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 150%;
+}
+
+/* Media queries for responsive layouts. This challenge is designed with a mobile-first approach in 
+mind with styling changes applied to specific component changes */
+
+/* Component changes for Tablet (768px) layout */
+@media (min-width: 768px) {
+  /* Placeholder Media Query */
+}
+
+/* Component changes for Desktop (1440px) layout. Setting the min-width to 1440px for better
+transitioning from tablet layout */
+@media (min-width: 1080px) {
+  /* Placeholder Media Query */
 }
