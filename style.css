@@ -39,7 +39,7 @@ will be applied to elements as util classes. */
   /* Fraunces 144 Semi Bold at 48px */
   font-family: "Fraunces", "Times New Roman", serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.75rem;
   line-height: 100%;
   color: var(--white);
 }
@@ -93,6 +93,7 @@ will be applied to elements as util classes. */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 32px 20px 0;
 }
 
 .hero-body {
@@ -100,6 +101,9 @@ will be applied to elements as util classes. */
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  padding: 56px 0px 144px;
+  gap: 40px;
 }
 
 body {
@@ -108,8 +112,28 @@ body {
 }
 
 header {
+  position: relative;
   background-color: var(--purple-900);
-  padding: 0 20px;
+  padding: 32px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ornamental-divider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  fill: white;
+  width: 100%;
 }
 
 .keynotes-section {
@@ -118,6 +142,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  gap: 20;
 }
 
 .list-keynote-item {
@@ -125,14 +151,15 @@ header {
   flex-direction: column;
   align-items: center;
 
-  gap: 24;
+  gap: 24px;
 }
 
 .list-keynote-content {
   display: flex;
   flex-direction: column;
+
   text-align: center;
-  gap: 4;
+  gap: 32px;
 }
 
 .list-keynote-marker {
@@ -154,8 +181,16 @@ header {
 }
 
 .list-keynotes {
-  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   padding: 0;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
 }
 
 main {
@@ -164,7 +199,8 @@ main {
   align-items: center;
   justify-content: center;
 
-  padding: 0 20px;
+  padding: 64px 20px 0;
+
   text-align: center;
 }
 
@@ -172,6 +208,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 80px;
+  gap: 56px;
 }
 
 /* Smaller element styling rules */
@@ -181,11 +219,19 @@ a {
 
 button {
   background-color: var(--green);
+  border: none;
   padding: 12px 32px;
 }
 
 .hero-illustration {
+  position: absolute;
+  bottom: -7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 22rem;
+  padding: 0 20px;
   width: 100%;
+  z-index: 1;
 }
 
 .list-keynotes {
@@ -200,7 +246,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32;
+  gap: 32px;
 
   padding: 32px;
   background-color: var(--purple-900);
@@ -211,6 +257,10 @@ button {
 .underline {
   /* Placeholder CSS class for the underline element found under 'Apply for Access', 
   'tailored' in the Hero text */
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--green);
 }
 
 /* Media queries for responsive layouts. This challenge is designed with a mobile-first approach in 
