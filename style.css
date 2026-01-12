@@ -123,7 +123,7 @@ header {
 
 .nav-container {
   display: flex;
-  width: 100%;
+  width: 100%; /* Necessary for space-between */
   flex-direction: row;
   justify-content: space-between;
 }
