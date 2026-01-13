@@ -79,37 +79,35 @@ will be applied to elements as util classes. */
 }
 
 .button-preset {
-  width: fit-content;
-
   font-family: "Manrope", "Arial", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   line-height: 180%;
+
+  width: fit-content;
 }
 
 /* Styling for different components, sections */
-
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 32px 20px 0;
-}
-
-.hero-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  padding: 56px 0px 144px;
-  gap: 40px;
-}
 
 body {
   margin: 0;
   color: var(--purple-900); /* Default text color */
 }
+
+/* Element styling rules (non-sections) */
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--green);
+  border: none;
+  padding: 12px 32px;
+}
+
+/* Styling for Navigation and Hero sections. These elements are contained in <header>
+The SVG ornamental divider is included in this section with absolute positioning  */
 
 header {
   position: relative;
@@ -123,9 +121,39 @@ header {
 
 .nav-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 32px 20px 0;
+}
+
+.nav-container {
+  display: flex;
   width: 100%; /* Necessary for space-between */
   flex-direction: row;
   justify-content: space-between;
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 56px 0px 144px;
+  gap: 40px;
+}
+
+.hero-illustration {
+  position: absolute;
+  bottom: -7rem;
+  left: 50%;
+
+  width: 100%;
+  max-width: 22rem;
+
+  padding: 0 20px;
+  z-index: 1;
+  transform: translateX(-50%);
 }
 
 .ornamental-divider {
@@ -134,6 +162,20 @@ header {
   bottom: -1px; /* Strange rendering issue with SVG. Displays a gap otherwise. */
   fill: white;
   width: 100%;
+}
+
+/* Styling for the keynotes section, which includes the top features of the service 
+This is the start of <main>, containing the primary elements of the document */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 64px 20px 0;
+
+  text-align: center;
 }
 
 .keynotes-section {
@@ -187,8 +229,9 @@ header {
   padding: 0;
 }
 
+/* The consultation section is a CTA allowing users to book a consultation with Louis Graham */
+
 .cta-consulation {
-  /* Styling for the section allowing users to book a consultation with Louis Graham. */
   position: relative;
   padding-top: 112px;
   padding-left: 20px;
@@ -207,14 +250,13 @@ header {
 }
 
 .headshot-container {
-  position: absolute;
+  /* Unlike the Hero section, it is more ideal to use negative margins to position the headshot
+    position. This allows you to use the negative gap present in the design file for accuracy. */
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: -1;
   width: 100%;
 }
@@ -230,17 +272,6 @@ header {
   gap: 28px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  padding: 64px 20px 0;
-
-  text-align: center;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -249,33 +280,9 @@ footer {
   gap: 56px;
 }
 
-/* Smaller element styling rules */
-a {
-  text-decoration: none;
-}
-
-button {
-  background-color: var(--green);
-  border: none;
-  padding: 12px 32px;
-}
-
-.hero-illustration {
-  position: absolute;
-  bottom: -7rem;
-  left: 50%;
-
-  width: 100%;
-  max-width: 22rem;
-
-  padding: 0 20px;
-  z-index: 1;
-  transform: translateX(-50%);
-}
-
 /* Utility Classes */
 .underline {
-  /* Placeholder CSS class for the underline element found under 'Apply for Access', 
+  /* Styling for the underline element found under 'Apply for Access', 
   'tailored' in the Hero text */
   text-decoration: underline;
   text-decoration-thickness: 3px;
