@@ -56,7 +56,7 @@ will be applied to elements as util classes. */
   /* Fraunces 144 Semi Bold at 24px */
   font-family: "Fraunces", "Times New Roman", serif;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 120%;
 }
 
@@ -141,7 +141,7 @@ header {
 
 .hero-illustration {
   position: absolute;
-  bottom: -7rem;
+  bottom: -4rem;
   left: 50%;
 
   width: 100%;
@@ -155,7 +155,8 @@ header {
 
 .divider-container {
   position: absolute;
-  bottom: -1px;
+  top: 100%;
+  /* bottom: -1px; */
 
   width: 100%;
   height: fit-content;
@@ -163,7 +164,7 @@ header {
 
 .ornamental-divider {
   display: block;
-  fill: white;
+  fill: var(--purple-100);
   width: 100%;
 }
 
@@ -176,17 +177,19 @@ main {
   align-items: center;
   justify-content: center;
 
-  padding: 64px 20px 0;
+  padding: 64px 0;
+
+  background-color: var(--purple-100);
 
   text-align: center;
 }
 
 .keynotes-section {
-  padding-top: 64px;
-  padding-bottom: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 64px 20px;
 
   gap: 20;
 }
@@ -204,7 +207,7 @@ main {
   flex-direction: column;
 
   text-align: center;
-  gap: 32px;
+  gap: 16px;
 }
 
 .list-keynote-marker {
@@ -236,9 +239,12 @@ main {
 
 .cta-consulation {
   position: relative;
+  width: 100%;
   padding-top: 112px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+
+  background-color: var(--white);
 }
 
 .cta-consultation-content {
