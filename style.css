@@ -131,7 +131,7 @@ header {
 .ornamental-divider {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px; /* Strange rendering issue with SVG. Displays a gap otherwise. */
   fill: white;
   width: 100%;
 }
@@ -187,6 +187,43 @@ header {
   padding: 0;
 }
 
+.cta-consulation {
+  /* Styling for the section allowing users to book a consultation with Louis Graham. */
+  position: relative;
+  padding-top: 112px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cta-consultation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  padding: 32px;
+  background-color: var(--purple-900);
+  color: var(--white);
+}
+
+.headshot-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 100%;
+}
+
+.founder-img {
+  width: 240px;
+  height: 240px;
+}
+
 .footer-icons {
   display: flex;
   flex-direction: row;
@@ -227,30 +264,13 @@ button {
   position: absolute;
   bottom: -7rem;
   left: 50%;
-  transform: translateX(-50%);
-  max-width: 22rem;
-  padding: 0 20px;
+
   width: 100%;
+  max-width: 22rem;
+
+  padding: 0 20px;
   z-index: 1;
-}
-
-.list-keynotes {
-  /* Styling for the section providing keynote information on the product. Custom list styling. */
-  /* Placeholder CSS class */
-}
-
-.cta-consulation {
-  /* Styling for the section allowing users to book a consultation with Louis Graham. */
-  /* Placeholder CSS class */
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-
-  padding: 32px;
-  background-color: var(--purple-900);
-  color: var(--white);
+  transform: translateX(-50%);
 }
 
 /* Utility Classes */
