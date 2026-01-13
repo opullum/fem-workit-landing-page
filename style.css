@@ -247,6 +247,8 @@ main {
   padding: 32px;
   background-color: var(--purple-900);
   color: var(--white);
+
+  z-index: 1;
 }
 
 .headshot-container {
@@ -257,13 +259,16 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  z-index: -1;
+
   width: 100%;
+
+  margin-bottom: -48px;
 }
 
 .founder-img {
   width: 240px;
   height: 240px;
+  z-index: -1;
 }
 
 .footer-icons {
