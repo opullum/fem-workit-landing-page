@@ -166,6 +166,7 @@ header {
   display: block;
   fill: var(--purple-100);
   width: 100%;
+  z-index: 1;
 }
 
 /* Styling for the keynotes section, which includes the top features of the service 
@@ -191,6 +192,9 @@ main {
 }
 
 .list-keynotes {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   padding-bottom: 64px;
 }
 
@@ -226,13 +230,6 @@ main {
 
   border: 1px solid var(--purple-500);
   border-radius: 50%;
-}
-
-.list-keynotes {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding: 0;
 }
 
 /* The consultation section is a CTA allowing users to book a consultation with Louis Graham */
@@ -302,6 +299,14 @@ footer {
   text-decoration-thickness: 3px;
   text-underline-offset: 4px;
   text-decoration-color: var(--green);
+}
+
+.divider-white {
+  fill: var(--white);
+}
+
+.divider-purple-100 {
+  fill: var(--purple-100);
 }
 
 /* Media queries for responsive layouts. This challenge is designed with a mobile-first approach in 
