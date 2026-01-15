@@ -48,7 +48,6 @@ header {
   align-items: center;
 
   background-color: var(--purple-900);
-  /* margin-bottom: -104px; */
 }
 
 .nav-container {
@@ -110,54 +109,54 @@ main {
 
   background-color: var(--purple-100);
   text-align: center;
-}
 
-.keynotes-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .keynotes-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  gap: 20;
-}
+    gap: 20;
 
-.list-keynotes {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding: 128px 20px 64px;
-}
+    .list-keynotes {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding: 128px 20px 64px;
+    }
 
-.list-keynote-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    .list-keynote-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-  gap: 24px;
-}
+      gap: 24px;
 
-.list-keynote-content {
-  display: flex;
-  flex-direction: column;
+      .list-keynote-marker {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-  text-align: center;
-  gap: 16px;
-}
+        width: 48px;
+        height: 48px;
+        border: 1px solid var(--purple-500);
+        border-radius: 50%;
 
-.list-keynote-marker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+        /* TODO: Change this to use a non-hardcoded layout */
+        font-family: "Fraunces", "Times New Roman", sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
 
-  width: 48px;
-  height: 48px;
-  border: 1px solid var(--purple-500);
-  border-radius: 50%;
+      .list-keynote-content {
+        display: flex;
+        flex-direction: column;
 
-  /* TODO: Change this to use a non-hardcoded layout */
-  font-family: "Fraunces", "Times New Roman", sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
+        text-align: center;
+        gap: 16px;
+      }
+    }
+  }
 }
 
 /* The consultation section is a CTA allowing users to book a consultation with Louis Graham */
@@ -168,47 +167,43 @@ main {
   width: 100%;
   padding: 112px 20px 0px;
   background-color: var(--white);
-}
 
-.headshot-container {
-  /* Unlike the Hero section, it is more ideal to use negative margins to position the headshot
+  .headshot-container {
+    /* Unlike the Hero section, it is more ideal to use negative margins to position the headshot
     position. This allows you to use the negative gap present in the design file for accuracy. */
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-  width: 100%;
-  margin-bottom: -48px;
+    width: 100%;
+    margin-bottom: -48px;
+
+    .founder-img {
+      z-index: 0;
+
+      width: 240px;
+      height: 240px;
+    }
+  }
+
+  .cta-consultation-content {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 32px;
+    background-color: var(--purple-900);
+    color: var(--white);
+  }
 }
 
-.founder-img {
-  z-index: 0;
-
-  width: 240px;
-  height: 240px;
-}
-
-.cta-consultation-content {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-
-  padding: 32px;
-  background-color: var(--purple-900);
-  color: var(--white);
-}
-
-.footer-icons {
-  display: flex;
-  flex-direction: row;
-  gap: 28px;
-}
+/* Contains social icons and external contact details  */
 
 footer {
   display: flex;
@@ -216,6 +211,12 @@ footer {
   align-items: center;
   padding: 80px;
   gap: 56px;
+
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+  }
 }
 
 /* Utility Classes */
@@ -241,7 +242,7 @@ mind with styling changes applied to specific component changes */
 
 /* Component changes for Tablet (768px) layout */
 @media (min-width: 768px) {
-  /* Placeholder Media Query */
+  /* Updating paddings */
 }
 
 /* Component changes for Desktop (1440px) layout. Setting the min-width to 1440px for better
