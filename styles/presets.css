@@ -1,0 +1,56 @@
+/* Classes for Text Presets. Including varying font families, weights, and line heights. These 
+will be applied to elements as util classes. */
+
+/* Using rem sizing for fonts assuming a 1:16 ratio (rem:px). This is done out of preference */
+
+.text-preset-1 {
+  /* Fraunces 144 Semi Bold at 48px */
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 2.75rem;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.text-preset-2 {
+  /* Fraunces 144 Semi Bold at 56px */
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.text-preset-3 {
+  /* Fraunces 144 Semi Bold at 24px */
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+.text-preset-4 {
+  /* Manrope Regular at 18px */
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 180%;
+}
+
+.text-preset-5 {
+  /* Manrope Bold at 18px */
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 150%;
+
+  color: var(--white);
+}
+
+.button-preset {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 180%;
+
+  width: fit-content;
+}
