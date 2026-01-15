@@ -50,6 +50,16 @@ header {
 
   background-color: var(--purple-900);
 
+  .bg-pattern-1 {
+    position: absolute;
+    display: none;
+  }
+
+  .bg-pattern-2 {
+    position: absolute;
+    display: none;
+  }
+
   .nav-container {
     display: flex;
     flex-direction: row;
