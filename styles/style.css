@@ -22,6 +22,8 @@
 /* Styling for different components, sections */
 
 body {
+  position: relative;
+
   margin: 0;
   color: var(--purple-900); /* Default text color */
   box-sizing: border-box;
@@ -52,12 +54,9 @@ header {
 
   background-color: var(--purple-900);
 
-  .bg-pattern-1 {
-    position: absolute;
-    display: none;
-  }
-
-  .bg-pattern-2 {
+  .bg-pattern-1,
+  .bg-pattern-2,
+  .bg-pattern-3 {
     position: absolute;
     display: none;
   }
@@ -239,7 +238,8 @@ mind with styling changes applied to specific component changes */
 @media (min-width: 768px) {
   /* Displaying the decorative elements in the Hero section */
   header .bg-pattern-1,
-  header .bg-pattern-2 {
+  header .bg-pattern-2,
+  .bg-pattern-3 {
     display: inline;
   }
 
@@ -321,11 +321,21 @@ mind with styling changes applied to specific component changes */
         right: 0;
         bottom: 0;
 
+        align-items: start;
+        text-align: left;
+
         height: 390px;
         width: 504px;
         max-width: 504px;
       }
     }
+  }
+
+  .bg-pattern-3 {
+    position: absolute;
+    right: 75px;
+    bottom: 150px;
+    z-index: 2;
   }
 
   /* Component Changes */
