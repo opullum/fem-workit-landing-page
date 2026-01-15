@@ -1,5 +1,5 @@
 @import url("/styles/fonts.css"); /* Font faces */
-@import url("/styles/presets.css");
+@import url("/styles/presets.css"); /* Storing text and element presets */
 
 /* Universal reset to remove all built in margins/padding. Will manually implement for each element */
 * {
@@ -137,12 +137,12 @@ main {
         justify-content: center;
         align-items: center;
 
-        width: 48px;
-        height: 48px;
+        /* TODO: Change this from a hardcoded layout */
+        min-width: 48px;
+        min-height: 48px;
         border: 1px solid var(--purple-500);
         border-radius: 50%;
 
-        /* TODO: Change this to use a non-hardcoded layout */
         font-family: "Fraunces", "Times New Roman", sans-serif;
         font-weight: 600;
         font-size: 1.25rem;
@@ -220,6 +220,7 @@ footer {
 }
 
 /* Utility Classes */
+
 .underline {
   /* Styling for the underline element found under 'Apply for Access', 
   'tailored' in the Hero text */
@@ -242,7 +243,32 @@ mind with styling changes applied to specific component changes */
 
 /* Component changes for Tablet (768px) layout */
 @media (min-width: 768px) {
-  /* Updating paddings */
+  /* Updating font sizes */
+  .text-preset-1 {
+    font-size: 5rem;
+  }
+  .text-preset-2 {
+    font-size: 2.5rem;
+  }
+  .text-preset-3 {
+    font-size: 2rem;
+  }
+
+  main .keynotes-section .list-keynotes {
+    .list-keynote-item {
+      flex-direction: row;
+    }
+    .list-keynote-marker {
+      min-width: 48px;
+    }
+  }
+
+  /* Layout changes */
+  .list-keynote-item {
+    flex-direction: row;
+  }
+
+  /* Component Changes */
 }
 
 /* Component changes for Desktop (1440px) layout. Setting the min-width to 1440px for better
