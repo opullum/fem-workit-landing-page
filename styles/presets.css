@@ -54,3 +54,40 @@ will be applied to elements as util classes. */
 
   width: fit-content;
 }
+
+@media (min-width: 768px) {
+  .text-preset-1 {
+    font-size: 3.75rem;
+  }
+
+  .text-preset-2 {
+    font-size: 3rem;
+  }
+  .text-preset-3 {
+    font-size: 1.5rem;
+  }
+  .text-preset-4 {
+    font-size: 1rem;
+  }
+  .button-preset {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .text-preset-1 {
+    font-size: 5rem;
+  }
+  .text-preset-2 {
+    font-size: 3.5rem;
+  }
+  .text-preset-3 {
+    font-size: 2rem;
+  }
+  .text-preset-4 {
+    font-size: 1.125rem;
+  }
+  .text-preset-5 {
+    font-size: 1.125rem;
+  }
+}
