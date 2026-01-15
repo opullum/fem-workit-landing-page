@@ -397,4 +397,29 @@ transitioning from tablet layout */
       }
     }
   }
+
+  main .keynotes-section {
+  }
+
+  main .keynotes-section .list-keynotes {
+    flex-direction: row;
+    /* padding: 88px 80px 144px; */
+    padding: 244px 160px 144px;
+    gap: 32px;
+
+    .list-keynote-item {
+      flex-direction: column;
+      gap: 32px;
+
+      .list-keynote-content {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        min-width: 352px;
+        gap: 28px;
+      }
+    }
+  }
 }
