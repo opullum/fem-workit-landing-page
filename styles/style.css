@@ -38,9 +38,23 @@ a {
 }
 
 button {
+  box-sizing: content-box;
+
+  width: fit-content;
+  height: fit-content;
+
   background-color: var(--green);
+  color: var(--purple-900);
   border: none;
   padding: 12px 32px;
+
+  transition: background-color 0.5s ease, color 0.5s ease, outline 0.5s ease;
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--green);
+  outline: 2px solid var(--green);
 }
 
 /* Styling for Navigation and Hero sections. These elements are contained in <header>
@@ -55,8 +69,7 @@ header {
   background-color: var(--purple-900);
 
   .bg-pattern-1,
-  .bg-pattern-2,
-  .bg-pattern-3 {
+  .bg-pattern-2 {
     position: absolute;
     display: none;
   }
@@ -216,6 +229,11 @@ This is the start of <main>, containing the primary elements of the document */
   }
 }
 
+.bg-pattern-3 {
+  position: absolute;
+  display: none;
+}
+
 /* Contains social icons and external contact details  */
 footer {
   display: flex;
@@ -296,6 +314,7 @@ mind with styling changes applied to specific component changes */
   }
 
   main .cta-consulation {
+    position: relative;
     padding: 112px 44px 0;
     .cta-consultation-container {
       position: relative;
@@ -321,21 +340,25 @@ mind with styling changes applied to specific component changes */
         right: 0;
         bottom: 0;
 
+        padding: 48px;
+
+        flex-wrap: wrap;
         align-items: start;
         text-align: left;
+        align-content: flex-start;
 
-        height: 390px;
+        /* height: 390px; */
         width: 504px;
         max-width: 504px;
       }
     }
-  }
 
-  .bg-pattern-3 {
-    position: absolute;
-    right: 75px;
-    bottom: 150px;
-    z-index: 2;
+    .bg-pattern-3 {
+      position: absolute;
+      right: 50px;
+      bottom: -110px;
+      z-index: 2;
+    }
   }
 
   /* Component Changes */
