@@ -25,6 +25,8 @@ body {
   margin: 0;
   color: var(--purple-900); /* Default text color */
   box-sizing: border-box;
+
+  overflow-x: hidden;
 }
 
 /* Element styling rules (non-sections) */
@@ -236,7 +238,11 @@ mind with styling changes applied to specific component changes */
 
 /* Component changes for Tablet (768px) layout */
 @media (min-width: 768px) {
-  /* Updating font sizes */
+  /* Displaying the decorative elements in the Hero section */
+  header .bg-pattern-1,
+  header .bg-pattern-2 {
+    display: inline;
+  }
 
   /* Layout changes */
 
@@ -253,10 +259,22 @@ mind with styling changes applied to specific component changes */
     padding: 32px 44px 0px;
   }
 
-  header .hero-body {
-    padding: 56px 44px 200px; /* Default padding-bottom + 24px for divider */
-    max-width: 560px;
-    /* max-width: 480px; */
+  header {
+    .bg-pattern-1 {
+      top: 15%;
+      left: -28%;
+    }
+
+    .bg-pattern-2 {
+      top: 50%;
+      right: -12%;
+    }
+
+    .hero-body {
+      padding: 56px 44px 200px; /* Default padding-bottom + 24px for divider */
+      max-width: 560px;
+      /* max-width: 480px; */
+    }
   }
 
   main .keynotes-section .list-keynotes {
