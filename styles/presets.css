@@ -32,7 +32,7 @@ will be applied to elements as util classes. */
   /* Manrope Regular at 18px */
   font-family: "Manrope", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 180%;
 }
 
@@ -40,7 +40,7 @@ will be applied to elements as util classes. */
   /* Manrope Bold at 18px */
   font-family: "Manrope", "Arial", sans-serif;
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 150%;
 
   color: var(--white);
