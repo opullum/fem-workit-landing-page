@@ -81,20 +81,19 @@ header {
     max-height: 11.5rem;
     padding: 0 20px;
   }
-  .divider-container {
-    position: absolute;
-    bottom: -1px;
+}
 
+.divider-container {
+  position: absolute;
+  bottom: -1px;
+
+  width: 100%;
+  height: fit-content;
+
+  .ornamental-divider {
+    display: block;
     width: 100%;
-    height: fit-content;
-
-    .ornamental-divider {
-      display: block;
-      width: 100%;
-      z-index: 1;
-
-      fill: var(--purple-100);
-    }
+    z-index: 1;
   }
 }
 
