@@ -1,0 +1,18 @@
+/* Utility Classes */
+
+.underline {
+  /* Styling for the underline element found under 'Apply for Access', 
+  'tailored' in the Hero text */
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--green);
+}
+
+.divider-white {
+  fill: var(--white);
+}
+
+.divider-purple-100 {
+  fill: var(--purple-100);
+}
