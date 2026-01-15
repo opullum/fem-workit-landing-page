@@ -69,17 +69,23 @@ header {
     gap: 40px;
   }
 
-  .hero-illustration {
-    position: absolute;
-    bottom: -4rem;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%);
-
-    width: 100%;
-    max-width: 20rem;
-    max-height: 11.5rem;
+  .illustration-container {
     padding: 0 20px;
+    width: fit-content;
+    height: fit-content;
+
+    .hero-illustration {
+      position: absolute;
+      bottom: -4rem;
+      left: 50%;
+      z-index: 1;
+      transform: translateX(-50%);
+
+      width: 100%;
+      max-width: 23.5rem;
+      max-height: 11.5rem;
+      padding: 0 20px;
+    }
   }
 }
 
@@ -224,7 +230,13 @@ mind with styling changes applied to specific component changes */
 
   /* Layout changes */
 
-  header .hero-illustration {
+  header .illustration-container {
+    padding: 0 44px;
+    .hero-illustration {
+      max-width: 38rem;
+      max-height: 18.5rem;
+      bottom: -8rem;
+    }
   }
 
   header .nav-container {
@@ -232,13 +244,13 @@ mind with styling changes applied to specific component changes */
   }
 
   header .hero-body {
-    padding: 56px 44px 168px; /* Default padding-bottom + 24px for divider */
+    padding: 56px 44px 200px; /* Default padding-bottom + 24px for divider */
     max-width: 560px;
     /* max-width: 480px; */
   }
 
   main .keynotes-section .list-keynotes {
-    padding: 128px 44px 64px;
+    padding: 184px 44px 64px;
 
     .list-keynote-item {
       flex-direction: row;
