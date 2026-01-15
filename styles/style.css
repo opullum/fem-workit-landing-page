@@ -133,7 +133,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  background-color: var(--purple-100);
+  background-color: var(--white);
   text-align: center;
 
   /* Styling for the keynotes section, which includes the top features of the service 
@@ -151,6 +151,8 @@ This is the start of <main>, containing the primary elements of the document */
       flex-direction: column;
       gap: 32px;
       padding: 128px 20px 64px;
+
+      background-color: var(--purple-100);
     }
 
     .list-keynote-item {
