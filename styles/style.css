@@ -254,18 +254,23 @@ mind with styling changes applied to specific component changes */
     font-size: 2rem;
   }
 
+  /* Layout changes */
   main .keynotes-section .list-keynotes {
+    padding: 128px 44px 64px;
+
     .list-keynote-item {
       flex-direction: row;
+      gap: 56px;
     }
+
     .list-keynote-marker {
       min-width: 48px;
     }
-  }
 
-  /* Layout changes */
-  .list-keynote-item {
-    flex-direction: row;
+    .list-keynote-content {
+      align-items: start;
+      text-align: left;
+    }
   }
 
   /* Component Changes */
