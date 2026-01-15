@@ -369,5 +369,32 @@ mind with styling changes applied to specific component changes */
 /* Component changes for Desktop (1440px) layout. Setting the min-width to 1440px for better
 transitioning from tablet layout */
 @media (min-width: 1080px) {
-  /* Placeholder Media Query */
+  header {
+    .bg-pattern-1 {
+      top: 20%;
+      left: -10%;
+    }
+
+    .bg-pattern-2 {
+      top: 42%;
+      right: -5%;
+    }
+
+    .nav-container {
+      padding: 80px 160px 0 160px;
+    }
+
+    .hero-body {
+      padding: 56px 40px 352px;
+    }
+
+    .illustration-container {
+      .hero-illustration {
+        max-width: 48rem;
+        max-height: 28rem;
+        bottom: -8rem;
+        padding: 0 44px;
+      }
+    }
+  }
 }
