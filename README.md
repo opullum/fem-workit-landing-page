@@ -3,7 +3,7 @@
 ![Design preview for the Workit landing page coding challenge](./preview.jpg)
 
 <p align='center'>Intended design for the challenge from the provided Figma design file.</p>
-<p align='center'><a href=''>Link to Live Demo</a></p>
+<p align='center'><a href='https://fem-workit-landing-page-opullum.netlify.app/' target="_blank">Link to Live Demo</a></p>
 
 ## ⚙️Tools Utilized
 <div align='center'>
