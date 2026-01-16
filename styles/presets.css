@@ -1,8 +1,6 @@
 /* Classes for Text Presets. Including varying font families, weights, and line heights. These 
 will be applied to elements as util classes. */
 
-/* Using rem sizing for fonts assuming a 1:16 ratio (rem:px). This is done out of preference */
-
 .text-preset-1 {
   /* Fraunces 144 Semi Bold at 48px */
   font-family: "Fraunces", "Times New Roman", serif;
@@ -46,6 +44,7 @@ will be applied to elements as util classes. */
   color: var(--white);
 }
 
+/* TODO: Is this preset even used? */
 .button-preset {
   font-family: "Manrope", "Arial", sans-serif;
   font-weight: bold;
