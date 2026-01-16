@@ -1,8 +1,9 @@
-@import url("/styles/fonts.css"); /* Font faces */
-@import url("/styles/presets.css"); /* Storing text and element presets */
-@import url("/styles/utilties.css"); /* Utility classes */
+@import url("/styles/fonts.css");
+@import url("/styles/presets.css");
+@import url("/styles/utilties.css");
 
 /* Universal reset to remove all built in margins/padding. Will manually implement for each element */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +19,6 @@
   --purple-100: #fcf8ff;
   --white: #ffffff;
 }
-
-/* Styling for different components, sections */
 
 body {
   position: relative;
@@ -48,7 +47,10 @@ button {
   border: none;
   padding: 12px 32px;
 
-  transition: background-color 0.25s ease, color 0.25s ease, outline 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    outline 0.25s ease;
 }
 
 button:hover {
@@ -80,7 +82,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
 
-    width: 100%; /* Necessary for space-between */
+    width: 100%;
     padding: 20px;
   }
 
@@ -139,6 +141,7 @@ main {
 
   /* Styling for the keynotes section, which includes the top features of the service 
 This is the start of <main>, containing the primary elements of the document */
+
   .keynotes-section {
     position: relative;
     display: flex;
@@ -168,7 +171,6 @@ This is the start of <main>, containing the primary elements of the document */
         justify-content: center;
         align-items: center;
 
-        /* TODO: Change this from a hardcoded layout */
         min-width: 48px;
         min-height: 48px;
         border: 1px solid var(--purple-500);
@@ -190,7 +192,7 @@ This is the start of <main>, containing the primary elements of the document */
   }
 
   /* The consultation section is a CTA allowing users to book a consultation with Louis Graham */
-  .cta-consulation {
+  .cta-consultation {
     padding: 112px 20px 0px;
     background-color: var(--white);
 
@@ -238,6 +240,7 @@ This is the start of <main>, containing the primary elements of the document */
 }
 
 /* Contains social icons and external contact details  */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -261,14 +264,14 @@ mind with styling changes applied to specific component changes */
 
 /* Component changes for Tablet (768px) layout */
 @media (min-width: 768px) {
-  /* Displaying the decorative elements in the Hero section */
+  /* The decorative spiral shapes are visible on the Tablet and Desktop layouts */
+
   header .bg-pattern-1,
   header .bg-pattern-2,
   .bg-pattern-3 {
     display: inline;
   }
 
-  /* Layout changes */
   header .illustration-container {
     .hero-illustration {
       max-width: 38rem;
@@ -320,9 +323,10 @@ mind with styling changes applied to specific component changes */
     }
   }
 
-  main .cta-consulation {
+  main .cta-consultation {
     position: relative;
     padding: 112px 44px 0;
+
     .cta-consultation-container {
       position: relative;
 
@@ -354,7 +358,6 @@ mind with styling changes applied to specific component changes */
         text-align: left;
         align-content: flex-start;
 
-        /* height: 390px; */
         width: 504px;
         max-width: 504px;
       }
@@ -371,7 +374,9 @@ mind with styling changes applied to specific component changes */
 
 /* Component changes for Desktop (1440px) layout. Setting the min-width to 1440px for better
 transitioning from tablet layout */
+
 @media (min-width: 1080px) {
+  /* Adjusting header shape positions, padding, illustration size */
   header {
     .bg-pattern-1 {
       top: 20%;
@@ -401,8 +406,8 @@ transitioning from tablet layout */
     }
   }
 
-  main .keynotes-section {
-  }
+  /* The keynotes content is now displayed in a row, where each item has content
+  displayed vertically. */
 
   main .keynotes-section .list-keynotes {
     flex-direction: row;
@@ -426,7 +431,10 @@ transitioning from tablet layout */
     }
   }
 
-  main .cta-consulation {
+  /* Adjusting sizing for the cta-consultation section. The third decorative spiral
+  has been included in this section for convenient positioning. */
+
+  main .cta-consultation {
     position: relative;
     padding: 112px 160px 0;
     width: 100%;
