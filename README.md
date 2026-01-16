@@ -2,23 +2,24 @@
 
 ![Design preview for the Workit landing page coding challenge](./preview.jpg)
 
-## Welcome! 👋
+<p align='center'>Intended design for the challenge from the provided Figma design file.</p>
+<p align='center'><a href='>Link to Live Demo</a></p>
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+## ⚙️Tools Utilized
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+<div align='center'>
+<img src='https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white'> <img src="https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white">
+<img src='https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7'>
+</div>
 
-**To do this challenge, you need a decent understanding of HTML and CSS.**
+## 💻 Challenge Information
+Design the landing page for WorkIt. The landing page features several unique elements
+to test basic HTML and CSS skills. Included are key points regarding the company
+alongside a button allowing you to contact Louis Graham, the founder of WorkIt.
 
-## The challenge
+## 📖 Learning Objectives
+- Implement a responsive site using HTML and CSS when provided a design file.
+- Accurately translate design files to web implementation.
+- Apply best practices for accessibility (semantic HTML).
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
-
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+<p align='center'>This challenge is provided through <a href="https://frontendmentor.io" target="_blank">Front End Mentor</a>.</p>
